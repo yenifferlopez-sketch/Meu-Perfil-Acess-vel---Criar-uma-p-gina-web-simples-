@@ -1,0 +1,189 @@
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #F4F6F9;
+  color: #1E293B;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #0F4C81;
+  color: #FFFFFF;
+  padding: 32px 0;
+  text-align: center;
+  border-bottom: 4px solid #093154;
+}
+
+.cabecalho h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.cabecalho p {
+  font-size: 18px;
+}
+
+/* Área principal */
+main {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+/* Cartão de Perfil */
+.cartao-perfil {
+  background-color: #FFFFFF;
+  border: 2px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #0F4C81;
+  display: block;
+}
+
+.dados-estudante {
+  flex: 1;
+}
+
+h2 {
+  font-size: 22px;
+  color: #0F4C81;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.lista-dados {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.lista-dados li {
+  margin-bottom: 8px;
+}
+
+/* Botão claro e fácil de identificar */
+.botao {
+  display: inline-block;
+  background-color: #0F4C81;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  border: 2px solid #093154;
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: #093154;
+  outline: 3px solid #D97706;
+  outline-offset: 3px;
+}
+
+/* Grade de Cards (Computador: lado a lado) */
+.grade-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 2px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.lista-itens {
+  margin-left: 22px;
+}
+
+.lista-itens li {
+  margin-bottom: 10px;
+}
+
+/* Tabela de Rotina */
+.card-rotina p {
+  margin-bottom: 16px;
+}
+
+.tabela-rotina {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-rotina th,
+.tabela-rotina td {
+  text-align: left;
+  padding: 12px 16px;
+  border: 2px solid #CBD5E1;
+}
+
+.tabela-rotina th {
+  background-color: #E0F2FE;
+  color: #093154;
+}
+
+.tabela-rotina tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #E2E8F0;
+  color: #1E293B;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #CBD5E1;
+  font-size: 15px;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 650px) {
+  .cabecalho h1 {
+    font-size: 24px;
+  }
+
+  .cartao-perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lista-dados {
+    text-align: left;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grade-cards {
+    grid-template-columns: 1fr;
+  }
+}
