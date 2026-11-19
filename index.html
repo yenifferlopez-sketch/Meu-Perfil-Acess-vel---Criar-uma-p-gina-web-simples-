@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <h1>👤 Meu Perfil Acessível</h1>
+      <p>Conheça um pouco sobre este estudante.</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+
+    <!-- Cartão de Perfil do Estudante -->
+    <section class="cartao-perfil" aria-labelledby="titulo-perfil">
+      <div class="area-avatar">
+        <img
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><rect width='160' height='160' rx='80' fill='%23E0F2FE'/><circle cx='80' cy='62' r='28' fill='%230F4C81'/><path d='M32 142 C32 110, 128 110, 128 142 Z' fill='%230F4C81'/></svg>"
+          alt="Avatar do estudante"
+          class="avatar"
+        >
+      </div>
+
+      <div class="dados-estudante">
+        <h2 id="titulo-perfil">Informações do Estudante</h2>
+        <ul class="lista-dados">
+          <li><strong>Nome:</strong> João</li>
+          <li><strong>Idade:</strong> 16 anos</li>
+          <li><strong>Curso:</strong> Técnico em Desenvolvimento de Sistemas</li>
+          <li><strong>Interesses:</strong> Tecnologia, jogos e música</li>
+          <li><strong>Objetivo:</strong> Aprender programação</li>
+        </ul>
+
+        <a href="#detalhes" class="botao">📋 Ver informações completas</a>
+      </div>
+    </section>
+
+    <!-- Cards de Informações em Colunas -->
+    <div id="detalhes" class="grade-cards">
+
+      <!-- Card: Eu gosto -->
+      <section class="card" aria-labelledby="titulo-gostos">
+        <h2 id="titulo-gostos">Eu gosto de...</h2>
+        <ul class="lista-itens">
+          <li>🎮 Jogos</li>
+          <li>🎵 Música</li>
+          <li>💻 Computadores</li>
+          <li>⚽ Esportes</li>
+          <li>📚 Tecnologia</li>
+        </ul>
+      </section>
+
+      <!-- Card: Como eu aprendo melhor -->
+      <section class="card" aria-labelledby="titulo-aprendizado">
+        <h2 id="titulo-aprendizado">📖 Aprendo melhor quando:</h2>
+        <ul class="lista-itens">
+          <li>As instruções são claras.</li>
+          <li>As atividades estão organizadas.</li>
+          <li>Tenho exemplos.</li>
+          <li>Sei o que preciso fazer.</li>
+          <li>As informações estão divididas em etapas.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Card: Minha Rotina -->
+    <section class="card card-rotina" aria-labelledby="titulo-rotina">
+      <h2 id="titulo-rotina">🕐 Minha Rotina</h2>
+      <p>Horários organizados para facilitar o dia a dia:</p>
+
+      <table class="tabela-rotina">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Atividade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>07:00</td>
+            <td>Acordar</td>
+          </tr>
+          <tr>
+            <td>08:00</td>
+            <td>Escola</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td>Almoço</td>
+          </tr>
+          <tr>
+            <td>13:30</td>
+            <td>Estudos</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td>Descanso e lazer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Meu Perfil Acessível — Desenvolvido com HTML5 e CSS3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
